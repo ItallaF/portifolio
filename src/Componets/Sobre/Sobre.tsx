@@ -16,12 +16,12 @@ export function Sobre() {
           experiência do mercado de trabalho atuando em uma equipe de 9 pessoas, onde atuei como desenvolvedora
           Front-End Web e Mobile utilizando React.JS e React Native. Estou sempre em busca de aprimorar
           meus conhecimentos e minhas habilidades uma vez que acredito que a tecnologia
-          está em constante evolução, se pararmos ficamos atrasados.No momento estou estudando Ingles e buscando
+          está em constante evolução, se pararmos ficamos atrasados. No momento estou estudando Ingles e buscando
           o desenvolvimento Fullstack.</Text>
-      
-      <ImgDiv>
-        <Girl />
-      </ImgDiv></DivText>
+        <ImgDiv>
+          <Girl />
+        </ImgDiv>
+      </DivText>
     </SobreSection>
   );
 };
