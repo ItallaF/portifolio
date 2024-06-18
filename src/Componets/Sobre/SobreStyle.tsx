@@ -23,8 +23,7 @@ export const DivText = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
   justify-items: start;
-  margin-left: 4%;
-  margin-top: 0%;
+  margin: 0% 0% 2% 4%;
 `;
 
 export const Text = styled.text`

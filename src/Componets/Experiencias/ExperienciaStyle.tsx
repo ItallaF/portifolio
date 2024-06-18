@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ExperienciaSection = styled.section`
   display: flex;
-  background-color: #b98cb9;
+  background-color: #b37fb3;
   flex-direction: column;
   justify-content: center;
 `;
@@ -18,20 +18,20 @@ export const DivTitle = styled.div`
 
 export const DivText = styled.div`
   border-block-end: 1px solid;
-  border-color: #bd55a3;
+  border-color: #b01289;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0% 4%;
+  margin: 0% 4% 2%;
 `;
 export const SubTitle = styled.h3`
   align-items: center;
-  color: #bd55a3;
+  color: #b01289;
   font-family: Open Sans, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   text-align: justify;
-  margin-top: 0%;
+  margin-top: 2%;
   margin-bottom: 0.5%;
 `;
 
