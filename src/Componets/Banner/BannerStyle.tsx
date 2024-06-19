@@ -44,6 +44,11 @@ export const ButtonDiv = styled.div`
   gap: 1.5em;
 `;
 
+export const ButtonLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+`;
+
 export const Button = styled.button`
   align-items: center;
   background-color: #bd55a3;

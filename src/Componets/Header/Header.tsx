@@ -13,7 +13,6 @@ export function Header() {
           <MenuLink href='#certificacoes'>Certificações</MenuLink>
         </Navbar>
       </Menu>
-      {/* <Banner /> */}
     </>
   );
 }

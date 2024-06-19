@@ -10,9 +10,10 @@ export const CertificacoesSection = styled.section`
 export const CertificacoesDiv = styled.div`
   display: grid;
   justify-content: center;
+  gap: 2%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0% 0% 2% 4%;
-  width: 95%;
+  margin: 2% 0% 2% 4%;
+  width: 90%;
 `;
 
 export const ItemDiv = styled.div`

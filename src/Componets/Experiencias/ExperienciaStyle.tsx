@@ -12,7 +12,6 @@ export const DivTitle = styled.div`
   display: grid;
   justify-items: center;
   margin-bottom: 0%;
-  margin-top: 1.2%;
   width: 100%;
 `;
 

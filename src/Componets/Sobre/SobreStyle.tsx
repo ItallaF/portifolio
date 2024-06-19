@@ -14,8 +14,8 @@ export const Title = styled.h2`
   font-size: 2em;
   font-weight: bold;
   justify-content: center;
-  margin-top: 4.5%;
-  margin-bottom: 1%;
+  margin-top: 4%;
+  margin-bottom: 0%;
 `;
 
 export const DivText = styled.div`
@@ -23,7 +23,7 @@ export const DivText = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
   justify-items: start;
-  margin: 0% 0% 2% 4%;
+  margin: 1% 0% 2% 4%;
 `;
 
 export const Text = styled.text`
