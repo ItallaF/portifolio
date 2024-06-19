@@ -3,7 +3,7 @@ import { DivText, ImgDiv, SobreSection, Text, Title } from './SobreStyle';
 
 export function Sobre() {
   return (
-    <SobreSection>
+    <SobreSection id='sobreMim'>
       <Title>Sobre Mim</Title>
       <DivText>
         <Text> Olá! Sou Técnica em Informática para Internet e Bacharela em Sistemas da Informação,

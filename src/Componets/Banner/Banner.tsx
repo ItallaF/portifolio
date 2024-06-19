@@ -3,7 +3,7 @@ import { BannerDiv, BannerSection, Button, ButtonDiv, ButtonSvg, TextBanner, Tit
 
 export function Banner() {
   return (
-    <BannerSection>
+    <BannerSection id='home'>
       <BannerDiv>
       <TitleBanner>Italla Felyne</TitleBanner>
       <TextBanner>Desenvolvedora Front-End e Mobile</TextBanner>

@@ -3,14 +3,17 @@ import { Menu, MenuLink, Navbar } from './HeaderStyle';
 
 export function Header() {
   return (
-    <Menu>
-      <Navbar>
-        <MenuLink href="/">Home</MenuLink>
-        <MenuLink href="/">Sobre mim</MenuLink>
-        <MenuLink href="/">Experiências</MenuLink>
-        <MenuLink href="/">Projetos</MenuLink>
-        <MenuLink href="/">Certificações</MenuLink>
-      </Navbar>
-    </Menu>
+    <>
+      <Menu>
+        <Navbar>
+          <MenuLink href='#home'>Home</MenuLink>
+          <MenuLink href='#sobreMim'>Sobre mim</MenuLink>
+          <MenuLink href='#experiencias'>Experiências</MenuLink>
+          <MenuLink href='#projetos'>Projetos</MenuLink>
+          <MenuLink href='#certificacoes'>Certificações</MenuLink>
+        </Navbar>
+      </Menu>
+      {/* <Banner /> */}
+    </>
   );
 }

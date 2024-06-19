@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ExperienciaSection = styled.section`
   display: flex;
-  background-color: #b37fb3;
+  background-color: #a784a7;
   flex-direction: column;
   justify-content: center;
 `;

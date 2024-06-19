@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SobreSection = styled.section`
   display: grid;
-  background-color: #b98cb9;
+  background-color: #b37fb3;
   width: 100%;
 `;
 
@@ -14,7 +14,7 @@ export const Title = styled.h2`
   font-size: 2em;
   font-weight: bold;
   justify-content: center;
-  margin-top: 0.5%;
+  margin-top: 4.5%;
   margin-bottom: 1%;
 `;
 
@@ -27,11 +27,11 @@ export const DivText = styled.div`
 `;
 
 export const Text = styled.text`
-   color: #f5fffa;
-   font-family: Open Sans, sans-serif;
-   font-size: 1em;
-   font-weight: normal;
-   text-align: justify;
+  color: #f5fffa;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: justify;
 `;
 
 export const ImgDiv = styled.div`

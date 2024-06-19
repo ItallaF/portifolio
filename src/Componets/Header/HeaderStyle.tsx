@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Menu = styled.header`
-  align-items: center;
-  background-color: #b98cb9;
+  background-color: #955e95;
   height: 10vh;
+  position: fixed;
   width: 100%;
+  z-index: 1;
 `;
 
 export const Navbar = styled.nav`

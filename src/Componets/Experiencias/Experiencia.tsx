@@ -3,7 +3,7 @@ import { DivText, DivTitle, ExperienciaSection, SubTitle, Text, TextDestac } fro
 
 export function Experiencia() {
   return (
-    <ExperienciaSection>
+    <ExperienciaSection id='experiencias'>
       <DivTitle>
         <Title>Experiências</Title>
       </DivTitle>
