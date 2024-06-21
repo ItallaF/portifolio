@@ -1,18 +1,48 @@
 import { Title } from '../Sobre/SobreStyle';
 import { Button, ButtonDiv, ButtonLink, DivImg, Img, ItemDiv, ProjetoDiv, ProjetoSection, SubTitle, Text, TextDestac } from './ProjetosStyle';
-import clothes from '../../assets/img/Clothes.jpg';
-import findbook from '../../assets/img/FindBook.jpg';
-import talktome from '../../assets/img/TalkToMe.jpg';
-
+import clothes from '../../assets/img/projectos/Clothes.jpg';
+import Reviva from '../../assets/img/projectos/Reviva.png';
+import talktome from '../../assets/img/projectos/TalkToMe.jpg';
+import talkMe from '../../assets/img/projectos/TalkMe.png';
+import findbook from '../../assets/img/projectos/FindBook.jpg';
+import findBookSite from '../../assets/img/projectos/FindBookSite.png';
+import { useState } from 'react';
 
 export function Projetos() {
+  const revivaImages = {
+    clothesImage: clothes,
+    RevivaImage: Reviva,
+  } as any;
+  const [imagem, setImagem] = useState('clothesImage');
+  const trocarImagemReviva = () => {
+    setImagem(state => state === 'clothesImage' ? 'RevivaImage' : 'clothesImage');
+  };
+
+  const talkImages = {
+    talktoMeImage: talktome,
+    talkMeImage: talkMe,
+  } as any;
+  const [talkimagem, settalkImagem] = useState('talktoMeImage');
+  const trocarImagemTalk = () => {
+    settalkImagem(state => state === 'talktoMeImage' ? 'talkMeImage' : 'talktoMeImage');
+  };
+
+  const findImages = {
+    findBookImage: findbook,
+    findBooksiteImage: findBookSite,
+  } as any;
+  const [findImagem, setfindImagem] = useState('findBookImage');
+  const trocarImagemFind = () => {
+    setfindImagem(state => state === 'findBookImage' ? 'findBooksiteImage' : 'findBookImage');
+  };
+
   return (
     <ProjetoSection id='projetos'>
       <Title>Projetos</Title>
       <ProjetoDiv>
         <ItemDiv>
           <DivImg>
-            <Img src={clothes} />
+            <Img src={revivaImages[imagem]} onMouseOver={trocarImagemReviva} />
           </DivImg>
           <SubTitle>Reviva Fashion</SubTitle>
           <Text>Projeto desenvolvido a partir do programa Up!Tech da Riachuelo em
@@ -37,7 +67,7 @@ export function Projetos() {
         </ItemDiv>
         <ItemDiv>
           <DivImg>
-            <Img src={talktome} />
+            <Img src={talkImages[talkimagem]} onMouseOver={trocarImagemTalk} />
           </DivImg>
           <SubTitle>Talk To Me</SubTitle>
           <Text>Projeto desenvolvido a partir da Semana do Herói da Hero Code, nele foi desenvolvido
@@ -61,7 +91,7 @@ export function Projetos() {
         </ItemDiv>
         <ItemDiv>
           <DivImg>
-            <Img src={findbook} />
+            <Img src={findImages[findImagem]} onMouseOver={trocarImagemFind} />
           </DivImg>
           <SubTitle>Find Book</SubTitle>
           <Text>Projeto desenvolvido a partir da Semana do Herói da Hero Code, nele foi desenvolvido duas páginas
@@ -85,7 +115,7 @@ export function Projetos() {
         </ItemDiv>
         <ItemDiv>
           <DivImg>
-            <Img src={clothes} />
+            <Img src={revivaImages[imagem]} onMouseOver={trocarImagemReviva} />
           </DivImg>
           <SubTitle>Portifolio</SubTitle>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In venenatis fringilla dapibus.
@@ -95,12 +125,12 @@ export function Projetos() {
           <TextDestac>Curabitur condimentum risus non ipsum lacinia bibendum.
           </TextDestac>
           <ButtonDiv>
-            <ButtonLink href='https://'>
+            <ButtonLink href='https://portifolio-git-develop-itallafs-projects.vercel.app/'>
               <Button>
                 Projeto
               </Button>
             </ButtonLink>
-            <ButtonLink href='https://'>
+            <ButtonLink href='https://github.com/ItallaF/portifolio'>
               <Button>
                 Código
               </Button>

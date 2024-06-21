@@ -69,10 +69,9 @@ export const ButtonLink = styled.a`
 
 export const Button = styled.button`
   align-items: center;
-  background-color: #9b2f8075;
-  border-color: #bd55a3;
+  background-color: #b0128954;
+  border: 2px solid #bd55a3;
   border-radius: 0.5em;
-  border: 1px solid transparent;
   cursor: pointer;
   color: #f5fffa;
   display: flex;
