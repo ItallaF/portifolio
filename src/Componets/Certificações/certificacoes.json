@@ -1,0 +1,52 @@
+{
+  "cursos": [
+      {
+          "cursoNome": "Semana do Herói Edição 03",
+          "instituicao": "Hero Code",
+          "duracao": "6 Horas",
+          "anoConclusao": "2024"
+      },
+      {
+          "cursoNome": "Semana do Herói Edição 02",
+          "instituicao": "Hero Code",
+          "duracao": "8 Horas",
+          "anoConclusao": "2023"
+      },
+      {
+          "cursoNome": "Imersão Tech Dezembro",
+          "instituicao": "Cia de Talentos",
+          "duracao": "10 Horas",
+          "anoConclusao": "2023"
+      },
+      {
+          "cursoNome": "Bacharelado em Sistemas de Informação",
+          "instituicao": "Instituto Federal do Norte De Minas Gerais",
+          "duracao": "4 Anos",
+          "anoConclusao": "2022"
+      },
+      {
+          "cursoNome": "Programa Up!Tech",
+          "instituicao": "Alura para Empresas – Riachuelo",
+          "duracao": "480 Horas",
+          "anoConclusao": "2022"
+      },
+      {
+          "cursoNome": "Programação de Aplicativos Móveis",
+          "instituicao": "Instituto Federal do Norte De Minas Gerais",
+          "duracao": "72 Horas",
+          "anoConclusao": "2019"
+      },
+      {
+          "cursoNome": "Formação Inicial em Desenvolvimento Web",
+          "instituicao": "Instituto Federal do Norte De Minas Gerais",
+          "duracao": "200 Horas",
+          "anoConclusao": "2017"
+      },
+      {
+          "cursoNome": "Técnico em Informática para Internet",
+          "instituicao": "Instituto Federal do Norte De Minas Gerais",
+          "duracao": "1 Ano e 6 Meses",
+          "anoConclusao": "2017"
+      }
+  ]
+}
