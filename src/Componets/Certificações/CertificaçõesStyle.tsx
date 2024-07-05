@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import swiper from 'swiper';
-import { SwiperSlide, Swiper } from 'swiper/react';
 
 export const CertificacoesSection = styled.section`
   display: flex;
@@ -14,15 +12,6 @@ export const CertificacoesDiv = styled.div`
   justify-content: center;
   margin: 2% 0% 2% 4%;
   width: 90%;
-`;
-
-export const ItemDiv = styled.div`
-  border: 1px solid;
-  border-color: #b01289;
-  display: grid;
-  height: 100%;
-  justify-content: center;
-  padding: 5%;
 `;
 
 export const SubTitle = styled.h3`
