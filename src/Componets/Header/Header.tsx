@@ -1,18 +1,44 @@
-import { Banner } from '../Banner/Banner';
-import { Menu, MenuLink, Navbar } from './HeaderStyle';
+import React, { memo, useState } from 'react';
+import { HeaderStyled, LogoStyled, MenuContentStyled, MenuStyled } from './HeaderStyle';
+import { FaBars } from 'react-icons/fa6';
 
-export function Header() {
+function Header() {
+  const [show, setShow] = useState<boolean>(false)
+
+  const toggleMenu = () => {
+    setShow(!show)
+  }
+
   return (
-    <>
-      <Menu>
-        <Navbar>
-          <MenuLink href='#home'>Home</MenuLink>
-          <MenuLink href='#sobreMim'>Sobre mim</MenuLink>
-          <MenuLink href='#experiencias'>Experiências</MenuLink>
-          <MenuLink href='#projetos'>Projetos</MenuLink>
-          <MenuLink href='#certificacoes'>Certificações</MenuLink>
-        </Navbar>
-      </Menu>
-    </>
+    <HeaderStyled>
+      <LogoStyled>
+        <button onClick={() => window.location.href = '/'}>
+          {/* <img src={logo} alt="Logo Marvel" width="36px" /> */}
+        </button>
+      </LogoStyled>
+
+      <MenuContentStyled>
+        <FaBars onClick={toggleMenu} style={{color: '#f5fffa', height: '7vh', width: '27vw'}}/>
+      </MenuContentStyled>
+
+      <MenuStyled show={show}>
+        <li>
+          <a href='#home'>Home</a>
+        </li>
+        <li>
+          <a href='#sobreMim'>Sobre mim</a>
+        </li>
+        <li>
+          <a href='#experiencias'>Experiências</a>
+        </li>
+        <li>
+          <a href='#projetos'>Projetos</a>
+        </li>
+        <li>
+          <a href='#certificacoes'>Certificações</a>
+        </li>
+      </MenuStyled>
+    </HeaderStyled>
   );
 }
+export default memo(Header);

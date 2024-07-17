@@ -13,6 +13,12 @@ export const BannerSection = styled.section`
   margin-top: 0%;
   opacity: 90%;
   height: 65vh;
+  @media screen and (max-width: 576px){
+		height: 49vh;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		height: 52vh;
+	}
 `;
 
 export const BannerDiv = styled.div`
@@ -20,23 +26,42 @@ export const BannerDiv = styled.div`
   display: grid;
   justify-items: center;
   margin-top: 5.5%;
+  @media screen and (max-width: 576px){
+		margin-top: 13.5%;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		margin-top: 6.5%;
+	}
 `;
 
 export const TitleBanner = styled.h1`
   color: #f5fffa;
   font-family: 'Great Vibes';
-  font-size: 5em;
+  font-size: 4rem;
   font-synthesis: none;
+  font-weight: bold;
   height: 6vh;
   margin-top: 4%;
   text-align: center;
+  @media screen and (max-width: 576px){
+		font-size: 3rem;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		font-size: 3rem;
+	}
 `;
 
 export const TextBanner = styled.p`
   color: #f5fffa;
   font-family: Work Sans, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-top: 0%;
+  @media screen and (max-width: 576px){
+		font-size: 1rem;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		font-size: 1rem;
+	}
 `;
 
 export const ButtonDiv = styled.div`
@@ -64,8 +89,26 @@ export const Button = styled.button`
   justify-content: center;
   text-align: center;
   width: 10vw;
+  @media screen and (max-width: 576px){
+		width: 35vw;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		width: 15vw;
+	}
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+		width: 13vw;
+	}
 `;
 
 export const ButtonSvg = styled.div`
   width: 2vw;
+  @media screen and (max-width: 576px){
+		width: 6vw;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		width: 3vw;
+	}
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+		width: 2.5vw;
+	}
 `;
