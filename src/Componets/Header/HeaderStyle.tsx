@@ -5,7 +5,7 @@ interface MenuProps {
 }
 export const HeaderStyled = styled.header`
   background-color: ${({ theme }) => theme.primary};
-  height: 10vh;
+  height: 8vh;
   position: fixed;
   width: 100%;
   z-index: 9999;
