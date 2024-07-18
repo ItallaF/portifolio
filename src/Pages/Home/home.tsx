@@ -5,8 +5,6 @@ import { Sobre } from '../../Componets/Sobre/Sobre';
 import { Experiencia } from '../../Componets/Experiencias/Experiencia';
 import { Projetos } from '../../Componets/Projetos/Projetos';
 import { Certicacoes } from '../../Componets/Certificações/Certificações';
-import { useState } from 'react';
-import { MenuMobile } from '../../Componets/MenuMobile/MenuMobile';
 
 
 
