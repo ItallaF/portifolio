@@ -27,7 +27,7 @@ export const BannerDiv = styled.div`
   justify-items: center;
   margin-top: 5.5%;
   @media screen and (max-width: 576px){
-		margin-top: 13.5%;
+		margin-top: 15.5%;
 	}
   @media screen and (min-width: 577px) and (max-width: 768px){
 		margin-top: 6.5%;
@@ -41,7 +41,7 @@ export const TitleBanner = styled.h1`
   font-synthesis: none;
   font-weight: bold;
   height: 6vh;
-  margin-top: 4%;
+  margin-top: 5%;
   text-align: center;
   @media screen and (max-width: 576px){
 		font-size: 3rem;
