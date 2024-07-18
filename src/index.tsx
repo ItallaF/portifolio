@@ -1,15 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { ThemeProvider } from 'styled-components';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { media } from './media';
+
+const projectTheme: ThemeProps = {
+  theme: {
+    primary: '#955e95',
+    secondary: '#f5fffa'
+  }
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider
+      theme={{
+        ...projectTheme.theme,
+        ...media
+      }}
+    >
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

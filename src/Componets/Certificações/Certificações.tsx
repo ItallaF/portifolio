@@ -29,7 +29,17 @@ export function Certicacoes() {
         <Swiper
           navigation={true}
           modules={[Navigation]}
-          slidesPerView={3}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {cursosSlideArray}
         </Swiper>
