@@ -16,7 +16,7 @@ export function Banner() {
               </ButtonSvg>
             </Button>
           </ButtonLink>
-          <ButtonLink href='https://github.com/'>
+          <ButtonLink href='https://github.com/ItallaF'>
             <Button>
               GitHub
               <ButtonSvg>

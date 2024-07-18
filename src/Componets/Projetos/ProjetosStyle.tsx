@@ -13,9 +13,21 @@ export const ProjetoDiv = styled.div`
   width: 90vw;
   align-items: center;
   justify-content: center;
-  height: 110vh;
-  @media screen and (max-width: 576px){
-		height: 150vh;
+  height: 100vh;
+  @media screen and (max-width: 320px){
+		height: 107vh;
+	}
+  @media screen and (min-width: 321px) and (max-width: 375px){
+		height: 102vh;
+	}
+	@media screen and (min-width: 376px) and (max-width: 576px){
+		height: 94vh;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px){
+		height: 115vh;
+	}
+	@media screen and (min-width: 769px) and (max-width: 1024px){
+		height: 137vh;
 	}
 `;
 
@@ -24,8 +36,9 @@ export const Carouseltem = styled.div`
   display: grid;
   justify-content: center;
   font-size: 4rem;
+  margin-left: 5.5%;
   height: 100%;
-  width: 50vw;  
+  width: 80vw;  
 `;
 
 export const SubTitle = styled.h3`
@@ -53,13 +66,13 @@ export const Img = styled.img`
   height: 52vh;
   margin-left: 4%;
   @media screen and (max-width: 576px){
-		height: 25vh;
-	}
-	@media screen and (min-width: 577px) and (max-width: 768px){
 		height: 30vh;
 	}
+	@media screen and (min-width: 577px) and (max-width: 768px){
+		height: 55vh;
+	}
 	@media screen and (min-width: 769px) and (max-width: 1024px){
-		height: 35vh;
+		height: 80vh;
 	}
 `;
 
@@ -73,6 +86,7 @@ export const Text = styled.text`
   text-align: justify;
   @media screen and (max-width: 576px){
 		font-size: 1rem;
+    text-align: start;
 	}
 	@media screen and (min-width: 577px) and (max-width: 768px){
 		

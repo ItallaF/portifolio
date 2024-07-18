@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Title } from '../Sobre/SobreStyle';
 import { Button, ButtonDiv, ButtonLink, Carouseltem, DivImg, Img, ProjetoDiv, ProjetoSection, SubTitle, Text, TextDestac } from './ProjetosStyle';
 import clothes from '../../assets/img/projectos/Clothes.jpg';
@@ -27,7 +26,7 @@ export function Projetos() {
         >
           <Carouseltem>
             <DivImg>
-              <Img src={clothes} className='img' />
+              <Img src={clothes} />
             </DivImg>
             <SubTitle>Reviva Fashion</SubTitle>
             <Text>Projeto desenvolvido a partir do programa Up!Tech da Riachuelo em

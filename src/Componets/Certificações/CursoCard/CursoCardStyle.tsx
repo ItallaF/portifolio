@@ -11,12 +11,16 @@ export const CardContainer = styled.div`
   justify-content: center;
   margin-left: 14%;
   padding: 5%;
-  width: 18vw;
-  @media screen and (max-width: 768px){
-		width: 25vw;
+  width: 18vw !important;
+  @media screen and (max-width: 576px){
+		width: 50vw !important;
+	}
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+		width: 25vw !important;
+    height: 65vh;
 	}
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-		width: 20vw;
+		width: 17vw !important;
     height: 65vh;
 	}
 `;
