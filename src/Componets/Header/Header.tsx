@@ -1,6 +1,7 @@
 import React, { memo, useState } from 'react';
-import { HeaderStyled, LogoStyled, MenuContentStyled, MenuStyled } from './HeaderStyle';
+import { HeaderStyled, ImgLogo, LogoStyled, MenuContentStyled, MenuStyled } from './HeaderStyle';
 import { FaBars } from 'react-icons/fa6';
+import logo from '../../assets/img/Logo.jpg';
 
 function Header() {
   const [show, setShow] = useState<boolean>(false)
@@ -13,7 +14,7 @@ function Header() {
     <HeaderStyled>
       <LogoStyled>
         <button onClick={() => window.location.href = '/'}>
-          {/* <img src={logo} alt="Logo Marvel" width="36px" /> */}
+          <ImgLogo src={logo} alt="Logo" />
         </button>
       </LogoStyled>
 

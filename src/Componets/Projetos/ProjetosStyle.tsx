@@ -7,13 +7,13 @@ export const ProjetoSection = styled.section`
 `;
 
 export const ProjetoDiv = styled.div`
+  align-items: center;
   display: flex;
+  height: 125vh;
+  justify-content: center;
   margin-left: 4%;
   margin-top: 1%;
   width: 90vw;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   @media screen and (max-width: 320px){
 		height: 107vh;
 	}
@@ -63,16 +63,13 @@ export const DivImg = styled.div`
 
 export const Img = styled.img`
   border-radius: 5%;
-  height: 52vh;
+  height: 80vh;
   margin-left: 4%;
   @media screen and (max-width: 576px){
 		height: 30vh;
 	}
 	@media screen and (min-width: 577px) and (max-width: 768px){
 		height: 55vh;
-	}
-	@media screen and (min-width: 769px) and (max-width: 1024px){
-		height: 80vh;
 	}
 `;
 
