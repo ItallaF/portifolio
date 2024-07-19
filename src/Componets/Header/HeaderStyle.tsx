@@ -9,26 +9,35 @@ export const HeaderStyled = styled.header`
   position: fixed;
   width: 100%;
   z-index: 9999;
-`
+`;
 
 export const LogoStyled = styled.div`
   position: absolute;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 4%;
   :hover {
     cursor: pointer;
   }
   button {
     all: unset;
   }
-`
+  @media screen and (min-width: 577px) and (max-width: 768px){
+    padding-left: 4%;
+	}
+`;
+
+export const ImgLogo = styled.img`
+  width: 10vw;
+`;
+
 export const MenuContentStyled = styled.div`
   position: absolute;
   z-index: 4;
   width: 100%;
   padding: 10px;
+  justify-content: flex-start;
   background-color: ${({ theme }) => theme.primary};
   overflow: hidden;
   display: none; 
@@ -40,14 +49,14 @@ export const MenuContentStyled = styled.div`
     position: fixed;
     height: 5vh;
   `}
-`
+`;
 export const MenuIconStyled = styled.img`
   cursor: pointer;
-`
+`;
 export const MenuStyled = styled.ul<MenuProps>`
   list-style: none;
   align-items: center;
-  margin: 0;
+  margin: 1% 0% 0% 10%;
   padding: 0 5%;
   overflow: hidden;
   font-size: 1.2rem;
@@ -58,7 +67,6 @@ export const MenuStyled = styled.ul<MenuProps>`
     display: block;
     color: #f5fffa;
     text-align: center;
-    padding: 8px;
     outline: none;
     text-decoration: none;
   }
@@ -95,4 +103,4 @@ export const MenuStyled = styled.ul<MenuProps>`
       }
     }
   `}
-`
+`;
