@@ -3,6 +3,7 @@ import { Button, ButtonDiv, ButtonLink, Carouseltem, DivImg, Img, ProjetoDiv, Pr
 import clothes from '../../assets/img/projectos/Clothes.jpg';
 import findbook from '../../assets/img/projectos/FindBook.jpg';
 import talktome from '../../assets/img/projectos/TalkToMe.jpg';
+import rotport from '../../assets/img/projectos/RotPort.png';
 import portifolio from '../../assets/img/projectos/portifolio.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -91,6 +92,31 @@ export function Projetos() {
                 </Button>
               </ButtonLink>
               <ButtonLink href='https://github.com/ItallaF/FindBook/tree/main/frontend'>
+                <Button>
+                  Código
+                </Button>
+              </ButtonLink>
+            </ButtonDiv>
+          </Carouseltem>
+          <Carouseltem>
+            <DivImg>
+              <Img src={rotport} />
+            </DivImg>
+            <SubTitle>RotPort</SubTitle>
+            <Text>Projeto desenvolvido para a conclusão do curso Bacharel em Sistemas de Informação, nele foi desenvolvido um
+              aplicativo mobile interativo para turistas, no qual tem visão das riquezas do município, possibilitando o
+              crescimento da economia regional. 
+            </Text>
+            <TextDestac>Tecnologias utilizadas no projeto: React Native, TypeScript, Styled Components, Firebase, Google Maps Platform
+              e Figma.
+            </TextDestac>
+            <ButtonDiv>
+              {/* <ButtonLink href='https://portifolio-rho-six-31.vercel.app/'>
+                <Button>
+                  Projeto
+                </Button>
+              </ButtonLink> */}
+              <ButtonLink href='https://github.com/ItallaF/RotPort'>
                 <Button>
                   Código
                 </Button>
