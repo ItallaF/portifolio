@@ -14,8 +14,11 @@ export function Certificacoes() {
 
       <div className={styles.container}>
         <Swiper
+          className={styles.swiper}
           navigation
           modules={[Navigation]}
+          spaceBetween={24}
+          slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

@@ -1,18 +1,24 @@
-import { CardContainer, SubTitle } from './CursoCardStyle';
+import styles from './CursoCard.module.css';
 import CursoInfo from './CursoInfo';
 import { CursoCardType } from './type';
 
-const CursoCard = (props: CursoCardType) => {
-    return (
-        <CardContainer >
-            <SubTitle>{props.cursoNome}</SubTitle>
-            <CursoInfo
-                instituicao={props.instituicao}
-                duracao={props.duracao}
-                anoConclusao={props.anoConclusao}
-            />
-        </CardContainer>
-    );
+const CursoCard = ({
+  cursoNome,
+  instituicao,
+  duracao,
+  anoConclusao
+}: CursoCardType) => {
+  return (
+    <div className={styles.card}>
+      <h3 className={styles.title}>{cursoNome}</h3>
+
+      <CursoInfo
+        instituicao={instituicao}
+        duracao={duracao}
+        anoConclusao={anoConclusao}
+      />
+    </div>
+  );
 };
 
 export default CursoCard;

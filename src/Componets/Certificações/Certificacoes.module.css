@@ -9,9 +9,34 @@
 .container {
   width: 100%;
   max-width: 1200px;
+  padding: 0 3rem;
 }
 
 /* Ajuste opcional do Swiper */
-.swiperWrapper {
+.swiper {
   width: 100%;
+}
+
+.swiper :global(.swiper-wrapper) {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper :global(.swiper-slide) {
+  align-items: stretch;
+  display: flex;
+  height: auto;
+}
+
+.swiper :global(.swiper-button-prev),
+.swiper :global(.swiper-button-next) {
+  color: #ffffff;
+}
+
+.swiper :global(.swiper-button-prev) {
+  left: 0;
+}
+
+.swiper :global(.swiper-button-next) {
+  right: 0;
 }
