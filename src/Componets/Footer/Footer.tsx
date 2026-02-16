@@ -1,11 +1,11 @@
-import { Footersection, TextFooter } from './FooterSyle';
+import styles from './Footer.module.css';
 
 export function Footer() {
   return (
-    <Footersection>
-      <TextFooter>
+    <footer className={styles.footer}>
+      <p className={styles.text}>
         By: Italla Felyne
-      </TextFooter>
-    </Footersection>
+      </p>
+    </footer>
   );
-};
+}

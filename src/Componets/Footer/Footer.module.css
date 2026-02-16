@@ -1,0 +1,15 @@
+.footer {
+  align-items: center;
+  background-color: #955e95;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.text {
+  color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
