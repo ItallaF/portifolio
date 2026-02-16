@@ -1,0 +1,100 @@
+:root {
+  --primary: #955e95;
+  --secondary: #f5fffa;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100%;
+  background: var(--primary);
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 70px;
+}
+
+/* LOGO */
+.logoButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoButton img {
+  height: 40px;
+}
+
+/* HAMBURGER (mobile only) */
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* DESKTOP NAV (hidden by default) */
+.navDesktop {
+  display: none;
+}
+
+.navDesktop ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navDesktop a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* MOBILE MENU */
+.mobileMenu {
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: var(--primary);
+  transition: right 0.3s ease;
+  padding: 2rem;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobileMenu a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.open {
+  right: 0;
+}
+
+/* DESKTOP BREAKPOINT */
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navDesktop {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
