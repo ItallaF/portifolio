@@ -1,0 +1,65 @@
+/* Container da seção */
+.sobreSection {
+  display: grid;
+  width: 100%;
+  background-color: #b37fb3;
+}
+
+/* Container de texto em grid */
+.divText {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 4%;
+  justify-items: start;
+  margin: 1% 0 2% 4%;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 576px) {
+  .divText {
+    grid-template-columns: 2fr;
+    width: 90%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .divText {
+    grid-template-columns: 2fr;
+    width: 90%;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .imgDiv {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* Texto */
+.text {
+  color: #f5fffa;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: justify;
+}
+
+/* Container de imagem */
+.imgDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 20%;
+  width: 55%;
+}
