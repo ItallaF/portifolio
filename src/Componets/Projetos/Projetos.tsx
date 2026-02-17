@@ -1,153 +1,56 @@
-import { Title } from '../Sobre/SobreStyle';
-import { Button, ButtonDiv, ButtonLink, Carouseltem, DivImg, Img, ProjetoDiv, ProjetoSection, SubTitle, Text, TextDestac } from './ProjetosStyle';
-import clothes from '../../assets/img/projectos/Clothes.jpg';
-import findbook from '../../assets/img/projectos/FindBook.jpg';
-import talktome from '../../assets/img/projectos/TalkToMe.jpg';
-import rotport from '../../assets/img/projectos/RotPort.png';
-import portifolio from '../../assets/img/projectos/portifolio.jpg';
+import styles from './Projetos.module.css';
+import typography from '../Styles/typography.module.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { projects } from './ProjetosItem/ProjetosItem';
 
 
 export function Projetos() {
 
   return (
-    <ProjetoSection id='projetos'>
-      <Title>Projetos</Title>
-      <ProjetoDiv>
-        <Carousel
-          className='crsl'
-          emulateTouch={true}
-          useKeyboardArrows={true}
-          showArrows={true}
-          infiniteLoop
-          swipeable={true}
-          showStatus={false}
-          showIndicators={false}    
-        >
-          <Carouseltem>
-            <DivImg>
-              <Img src={clothes} />
-            </DivImg>
-            <SubTitle>Reviva Fashion</SubTitle>
-            <Text>Projeto desenvolvido a partir do programa Up!Tech da Riachuelo em
-              parceria com a Alura, nele foi desenvolvida uma página de
-              compras, uma página de detalhes do produto e a navegação para a página da sacola.
-            </Text>
-            <TextDestac>Tecnologias utilizados no projeto: JavaScript, Sass, React JS, TypeScript,
-              StyledComponents e Next.
-            </TextDestac>
-            <ButtonDiv>
-              <ButtonLink href='https://uptech-reviva-react-next-xi.vercel.app/'>
-                <Button>
-                  Projeto
-                </Button>
-              </ButtonLink>
-              <ButtonLink href='https://github.com/ItallaF/uptech-reviva-react-next/tree/Semana-10'>
-                <Button>
+    <section id='projetos' className={styles.section}>
+      <h2 className={typography.sectionTitle}>Projetos</h2>
+      <div className={styles.grid}>
+        {projects.map((project, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.imageWrapper}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className={styles.image}
+              />
+            </div>
+
+            <div className={styles.content}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <span className={styles.tech}>{project.tech}</span>
+
+              <div className={styles.buttons}>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.primaryButton}
+                  >
+                    Projeto
+                  </a>
+                )}
+
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.secondaryButton}
+                >
                   Código
-                </Button>
-              </ButtonLink>
-            </ButtonDiv>
-          </Carouseltem>
-          <Carouseltem>
-            <DivImg>
-              <Img src={talktome} />
-            </DivImg>
-            <SubTitle>Talk To Me</SubTitle>
-            <Text>Projeto desenvolvido a partir da Semana do Herói da Hero Code, nele foi desenvolvido
-              duas páginas sendo a página inicial para ingressar ou criar uma nova reunião e a pagina
-              da reunião online.
-            </Text>
-            <TextDestac>Tecnologias utilizados no projeto: React JS, TypeScript, Tailwind, Websocket e Next.
-            </TextDestac>
-            <ButtonDiv>
-              <ButtonLink href='https://talk-to-me-beta.vercel.app/'>
-                <Button>
-                  Projeto
-                </Button>
-              </ButtonLink>
-              <ButtonLink href='https://github.com/ItallaF/Talk-to-me/tree/master/frontend'>
-                <Button>
-                  Código
-                </Button>
-              </ButtonLink>
-            </ButtonDiv>
-          </Carouseltem>
-          <Carouseltem>
-            <DivImg>
-              <Img src={findbook} />
-            </DivImg>
-            <SubTitle>Find Book</SubTitle>
-            <Text>Projeto desenvolvido a partir da Semana do Herói da Hero Code, nele foi desenvolvido duas páginas
-              sendo a página inicial a página onde é apresentado diversos livros e a segunda os livros com
-              detalhes.
-            </Text>
-            <TextDestac>Tecnologias utilizados no projeto: React JS, TypeScript, Tailwind, Vite e MongoDb.
-            </TextDestac>
-            <ButtonDiv>
-              <ButtonLink href='https://find-book-olive.vercel.app/'>
-                <Button>
-                  Projeto
-                </Button>
-              </ButtonLink>
-              <ButtonLink href='https://github.com/ItallaF/FindBook/tree/main/frontend'>
-                <Button>
-                  Código
-                </Button>
-              </ButtonLink>
-            </ButtonDiv>
-          </Carouseltem>
-          <Carouseltem>
-            <DivImg>
-              <Img src={rotport} />
-            </DivImg>
-            <SubTitle>RotPort</SubTitle>
-            <Text>Projeto desenvolvido para a conclusão do curso Bacharel em Sistemas de Informação, nele foi desenvolvido um
-              aplicativo mobile interativo para turistas, no qual tem visão das riquezas do município, possibilitando o
-              crescimento da economia regional. 
-            </Text>
-            <TextDestac>Tecnologias utilizadas no projeto: React Native, TypeScript, Styled Components, Firebase, Google Maps Platform
-              e Figma.
-            </TextDestac>
-            <ButtonDiv>
-              {/* <ButtonLink href='https://portifolio-rho-six-31.vercel.app/'>
-                <Button>
-                  Projeto
-                </Button>
-              </ButtonLink> */}
-              <ButtonLink href='https://github.com/ItallaF/RotPort'>
-                <Button>
-                  Código
-                </Button>
-              </ButtonLink>
-            </ButtonDiv>
-          </Carouseltem>
-          <Carouseltem>
-            <DivImg>
-              <Img src={portifolio} />
-            </DivImg>
-            <SubTitle>Portifolio</SubTitle>
-            <Text>Projeto pessoal desenvolvido com a finalidade de mostrar os demais projetos já desenvolvidos,
-              sendo esse projeto uma one page, apresentando de maneira curta um pouco mais sobre mim e meus conhecimentos.
-            </Text>
-            <TextDestac>Tecnologias utilizadas no projeto: React Js, TypeScript, Styled Components, React Carousel e Swiper.
-            </TextDestac>
-            <ButtonDiv>
-              <ButtonLink href='https://portifolio-rho-six-31.vercel.app/'>
-                <Button>
-                  Projeto
-                </Button>
-              </ButtonLink>
-              <ButtonLink href='https://github.com/ItallaF/portifolio'>
-                <Button>
-                  Código
-                </Button>
-              </ButtonLink>
-            </ButtonDiv>
-          </Carouseltem>
-        </Carousel>
-      </ProjetoDiv>
-    </ProjetoSection>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };

@@ -1,7 +1,6 @@
 /* Container da seção */
 .sobreSection {
   display: grid;
-  width: 100%;
   background-color: #b37fb3;
 }
 
