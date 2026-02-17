@@ -7,7 +7,7 @@ export function Sobre() {
     <section id='sobreMim' className={styles.sobreSection}>
       <h2 className={typography.sectionTitle}>Sobre Mim</h2>
       <div className={styles.divText}>
-        <text className={styles.text}> 
+        <div className={styles.text}> 
           <p>Sou Técnica em Informática para Internet e Bacharela em Sistemas de Informação
             pelo Instituto Federal do Norte de Minas Gerais.</p>
           <p>Minha trajetória na tecnologia começou ainda no curso técnico, quando conheci a programação
@@ -22,7 +22,7 @@ export function Sobre() {
             com foco em qualidade e organização de código.</p>
           Estou sempre em constante evolução, estudando inglês e aprofundando meus conhecimentos para atuar
           como desenvolvedora Fullstack.
-          </text>
+          </div>
         <div className={styles.ImgDiv}>
           <Girl />
         </div>
