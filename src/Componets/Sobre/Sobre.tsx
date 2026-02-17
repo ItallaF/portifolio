@@ -7,18 +7,22 @@ export function Sobre() {
     <section id='sobreMim' className={styles.sobreSection}>
       <h2 className={typography.sectionTitle}>Sobre Mim</h2>
       <div className={styles.divText}>
-        <text className={styles.text}> Olá! Sou Técnica em Informática para Internet e Bacharela em Sistemas da Informação,
-          ambos pelo Instituto Federal do Norte de Minas Gerais.
-          Durante o curso Técnico conheci a área da programação e me apaixonei por ela,
-          nascendo assim o desejo de atuar na área, me levando a entrar no curso superior em 2019
-          concluindo-o em 2022. Durante o curso participei de diversos projetos com HTML5,
-          CSS3, React Native, JavaScript, Typescript e node.js e Python.
-          Em 2022 entrei no programa Up!Tech da Riachuelo onde atuei como Trainee, onde obtive minha primeira
-          experiência do mercado de trabalho atuando em uma equipe de 9 pessoas, onde atuei como desenvolvedora
-          Front-End Web e Mobile utilizando React.JS e React Native. Estou sempre em busca de aprimorar
-          meus conhecimentos e minhas habilidades uma vez que acredito que a tecnologia
-          está em constante evolução, se pararmos ficamos atrasados. No momento estou estudando Ingles e buscando
-          o desenvolvimento Fullstack.</text>
+        <text className={styles.text}> 
+          <p>Sou Técnica em Informática para Internet e Bacharela em Sistemas de Informação
+            pelo Instituto Federal do Norte de Minas Gerais.</p>
+          <p>Minha trajetória na tecnologia começou ainda no curso técnico, quando conheci a programação
+            e decidi construir minha carreira na área. Desde então, venho direcionando minha formação e
+            experiências para o desenvolvimento de soluções digitais eficientes e bem estruturadas.</p>
+          <p>Ingressei na graduação em 2019 e concluí em 2022, período em que participei de projetos
+            utilizando HTML5, CSS3, JavaScript, TypeScript, React.js, React Native, Node.js e Python,
+            consolidando minha base técnica tanto para web quanto para mobile.</p>
+          <p>Em 2022, iniciei minha experiência profissional no programa Up!Tech da Riachuelo, atuando como
+            Desenvolvedora Trainee. Trabalhei como Desenvolvedora Front-end Web e Mobile, em uma equipe
+            multidisciplinar com nove profissionais, contribuindo para a construção e evolução de aplicações
+            com foco em qualidade e organização de código.</p>
+          Estou sempre em constante evolução, estudando inglês e aprofundando meus conhecimentos para atuar
+          como desenvolvedora Fullstack.
+          </text>
         <div className={styles.ImgDiv}>
           <Girl />
         </div>

@@ -1,0 +1,106 @@
+.section {
+  background-color: #a784a7;
+  padding: 1rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  border-bottom: 1px solid #b01289;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subTitle {
+  color: #b01289;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.text {
+  color: #f5fffa;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.textStrong {
+  font-weight: 700;
+  color: #f5fffa;
+  margin-top: 0.5rem;
+  text-align: start;
+}
+
+/* ========================= */
+/* LISTA COM BOLINHA CUSTOM  */
+/* ========================= */
+
+.list {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 0;
+  text-align: start;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.4rem;
+  color: #f5fffa;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #b01289;
+  font-weight: bold;
+}
+
+.date {
+  color: #f5fffa;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE MODERNA    */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.25rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+  }
+
+  .text,
+  .list li {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 0.95rem;
+  }
+}
