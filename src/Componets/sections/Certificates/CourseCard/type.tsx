@@ -1,4 +1,4 @@
-export interface CursoCardType {
+export interface CourseCardType {
   cursoNome: string;
   instituicao: string;
   duracao: string;

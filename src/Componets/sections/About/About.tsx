@@ -1,8 +1,8 @@
-import { Girl } from '../../Icons';
-import styles from './Sobre.module.css';
-import typography from '../Styles/typography.module.css';
+import { Girl } from '../../../Icons';
+import styles from './About.module.css';
+import typography from '../../../Styles/typography.module.css'
 
-export function Sobre() {
+export function About() {
   return (
     <section id='sobreMim' className={styles.sobreSection}>
       <h2 className={typography.sectionTitle}>Sobre Mim</h2>

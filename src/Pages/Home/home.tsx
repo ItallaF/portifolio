@@ -1,10 +1,10 @@
-import  Header  from '../../Componets/Header/Header';
-import { Footer } from '../../Componets/Footer/Footer';
-import { Banner } from '../../Componets/Banner/Banner';
-import { Sobre } from '../../Componets/Sobre/Sobre';
-import { Experiencia } from '../../Componets/Experiencias/Experiencia';
-import { Projetos } from '../../Componets/Projetos/Projetos';
-import { Certificacoes } from '../../Componets/Certificações/Certificações';
+import  Header  from '../../Componets/layout/Header/Header';
+import { Footer } from '../../Componets/layout/Footer/Footer';
+import { Banner } from '../../Componets/sections/Banner/Banner';
+import { About } from '../../Componets/sections/About/About';
+import { Experience } from '../../Componets/sections/Experience/Experience';
+import { Projects } from '../../Componets/sections/Projects/Projects';
+import { Certificates } from '../../Componets/sections/Certificates/Certificates';
 
 
 
@@ -14,10 +14,10 @@ export function Home() {
     <>
       <Header />
       <Banner />
-      <Sobre />
-      <Experiencia />
-      <Projetos />
-      <Certificacoes />
+      <About />
+      <Experience />
+      <Projects />
+      <Certificates />
       <Footer />
     </>
   );

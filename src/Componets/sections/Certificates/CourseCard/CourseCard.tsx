@@ -1,18 +1,18 @@
-import styles from './CursoCard.module.css';
-import CursoInfo from './CursoInfo';
-import { CursoCardType } from './type';
+import styles from './CourseCard.module.css';
+import CourseInfo from './CursoInfo';
+import { CourseCardType } from './type';
 
-const CursoCard = ({
+const CourseCard = ({
   cursoNome,
   instituicao,
   duracao,
   anoConclusao
-}: CursoCardType) => {
+}: CourseCardType) => {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>{cursoNome}</h3>
 
-      <CursoInfo
+      <CourseInfo
         instituicao={instituicao}
         duracao={duracao}
         anoConclusao={anoConclusao}
@@ -21,4 +21,4 @@ const CursoCard = ({
   );
 };
 
-export default CursoCard;
+export default CourseCard;

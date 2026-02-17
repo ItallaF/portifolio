@@ -1,9 +1,9 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-import clothes from '../../../assets/img/projectos/Clothes.jpg'
-import talktome from '../../../assets/img/projectos/TalkToMe.jpg'
-import rotport from '../../../assets/img/projectos/Turism.jpg'
-import portifolio from '../../../assets/img/projectos/portifolio.jpg'
+import clothes from '../../../../assets/img/projectos/Clothes.jpg'
+import talktome from '../../../../assets/img/projectos/TalkToMe.jpg'
+import rotport from '../../../../assets/img/projectos/Turism.jpg'
+import portifolio from '../../../../assets/img/projectos/portifolio.jpg'
 
 interface Project {
   title: string

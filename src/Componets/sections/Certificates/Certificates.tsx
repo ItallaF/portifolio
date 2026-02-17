@@ -1,15 +1,15 @@
-import styles from './Certificacoes.module.css';
-import typography from '../Styles/typography.module.css';
-import CursoCard from './CursoCard/CursoCard';
-import certificacoes from './certificacoes.json';
+import styles from './Certificates.module.css';
+import typography from '../../../Styles/typography.module.css'
+import certificates from './certificates.json';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import CourseCard from './CourseCard/CourseCard';
 
-export function Certificacoes() {
+export function Certificates() {
   return (
-    <section id="certificacoes" className={styles.section}>
+    <section id="Certificates" className={styles.section}>
       <h2 className={typography.sectionTitle}>Certificações</h2>
 
       <div className={styles.container}>
@@ -25,9 +25,9 @@ export function Certificacoes() {
             1024: { slidesPerView: 3 },
           }}
         >
-          {certificacoes.cursos.map((curso) => (
+          {certificates.cursos.map((curso) => (
             <SwiperSlide key={curso.cursoNome}>
-              <CursoCard
+              <CourseCard
                 cursoNome={curso.cursoNome}
                 instituicao={curso.instituicao}
                 duracao={curso.duracao}

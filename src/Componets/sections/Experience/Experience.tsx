@@ -1,8 +1,8 @@
-import styles from './Experiencia.module.css';
-import typography from '../Styles/typography.module.css';
-import { ExperienceItem } from './ExperienciaItem/ExperienceItem';
+import styles from './Experience.module.css';
+import typography from '../../../Styles/typography.module.css'
+import { ExperienceItem } from './ExperienceItem/ExperienceItem';
 
-export function Experiencia() {
+export function Experience() {
   return (
     <section id="experiencias" className={styles.section}>
       <div className={styles.container}>

@@ -1,7 +1,7 @@
 import React, { memo, useState } from 'react';
 import styles from './Header.module.css';
 import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/img/Logo.jpg';
+import logo from '../../../assets/img/Logo.jpg';
 
 function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false)

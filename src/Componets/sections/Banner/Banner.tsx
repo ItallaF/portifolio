@@ -1,5 +1,5 @@
 import styles from './Banner.module.css';
-import { Linkedin, GitHub } from '../../Icons';
+import { Linkedin, GitHub } from '../../../Icons';
 
 export function Banner() {
   return (

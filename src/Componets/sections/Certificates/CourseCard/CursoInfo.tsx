@@ -1,16 +1,16 @@
-import styles from './CursoCard.module.css';
+import styles from './CourseCard.module.css';
 
-interface CursoInfoType {
+interface CourseInfoType {
   instituicao: string;
   duracao: string;
   anoConclusao: string;
 }
 
-const CursoInfo = ({
+const CourseInfo = ({
   instituicao,
   duracao,
   anoConclusao
-}: CursoInfoType) => {
+}: CourseInfoType) => {
   return (
     <>
       <p className={styles.infoRow}>
@@ -28,4 +28,4 @@ const CursoInfo = ({
   );
 };
 
-export default CursoInfo;
+export default CourseInfo;

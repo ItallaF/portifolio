@@ -1,11 +1,10 @@
-import styles from './Projetos.module.css';
-import typography from '../Styles/typography.module.css';
-import { Carousel } from 'react-responsive-carousel';
+import styles from './Projects.module.css';
+import typography from '../../../Styles/typography.module.css'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { projects } from './ProjetosItem/ProjetosItem';
+import { projects } from './ProjectsItem/ProjectsItem';
 
 
-export function Projetos() {
+export function Projects() {
 
   return (
     <section id='projetos' className={styles.section}>
