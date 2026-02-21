@@ -1,12 +1,14 @@
 import { Girl } from '../../../Icons';
 import styles from './About.module.css';
 import typography from '../../../Styles/typography.module.css'
+import '../../../Styles/variables.module.css'
+import { SectionContainer } from '../../UI/SectionContainer/SectionContainer';
 
 export function About() {
   return (
-    <section id='sobreMim' className={styles.sobreSection}>
-      <h2 className={typography.sectionTitle}>Sobre Mim</h2>
-      <div className={styles.divText}>
+    <SectionContainer id="about" background="var(--section-sobre)">
+      <h2 className={typography.sectionTitle}>Sobre</h2>
+      <div className={styles.content}>
         <div className={styles.text}> 
           <p>Sou Técnica em Informática para Internet e Bacharela em Sistemas de Informação
             pelo Instituto Federal do Norte de Minas Gerais.</p>
@@ -27,6 +29,6 @@ export function About() {
           <Girl />
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };

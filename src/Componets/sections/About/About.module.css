@@ -1,21 +1,15 @@
-/* Container da seção */
-.sobreSection {
-  display: grid;
-  background-color: #b37fb3;
-}
-
 /* Container de texto em grid */
-.divText {
+.content {
   display: grid;
   grid-template-columns: 2fr 2fr;
   column-gap: 4%;
   justify-items: start;
-  margin: 1% 0 2% 4%;
+  margin: 0% 0 0% 4%;
 }
 
 /* Responsividade para telas pequenas */
 @media screen and (max-width: 576px) {
-  .divText {
+  .content {
     grid-template-columns: 2fr;
     width: 90%;
   }
@@ -26,7 +20,7 @@
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  .divText {
+  .content {
     grid-template-columns: 2fr;
     width: 90%;
   }

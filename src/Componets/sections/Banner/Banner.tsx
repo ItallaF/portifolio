@@ -4,6 +4,7 @@ import { Linkedin, GitHub } from '../../../Icons';
 export function Banner() {
   return (
     <section id="home" className={styles.banner}>
+      <div className={styles.overlay} />
       <div className={styles.content}>
         <h1 className={styles.title}>Italla Felyne</h1>
         <p className={styles.subtitle}>

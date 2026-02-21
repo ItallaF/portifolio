@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <p className={styles.text}>
-        By: Italla Felyne
+        © Italla Felyne
       </p>
     </footer>
   );

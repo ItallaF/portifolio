@@ -1,13 +1,15 @@
 import styles from './Projects.module.css';
 import typography from '../../../Styles/typography.module.css'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { projects } from './ProjectsItem/ProjectsItem';
+import { projects } from '../../../Data/Projects';
+import { SectionContainer } from '../../UI/SectionContainer/SectionContainer';
+
 
 
 export function Projects() {
 
   return (
-    <section id='projetos' className={styles.section}>
+    <SectionContainer id="projects" background="var(--section-projetos)">
       <h2 className={typography.sectionTitle}>Projetos</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (
@@ -50,6 +52,6 @@ export function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </SectionContainer>
   );
 };

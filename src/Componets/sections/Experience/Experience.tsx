@@ -1,10 +1,11 @@
 import styles from './Experience.module.css';
 import typography from '../../../Styles/typography.module.css'
 import { ExperienceItem } from './ExperienceItem/ExperienceItem';
+import { SectionContainer } from '../../UI/SectionContainer/SectionContainer';
 
 export function Experience() {
   return (
-    <section id="experiencias" className={styles.section}>
+    <SectionContainer id="experience" background="var(--section-experiencia)">
       <div className={styles.container}>
         
         <div className={styles.header}>
@@ -71,6 +72,6 @@ export function Experience() {
         />
 
       </div>
-    </section>
+    </SectionContainer>
   );
 }

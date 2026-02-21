@@ -1,3 +1,4 @@
+import { SkillList } from '../../../UI/SkillList/SkillList';
 import styles from '../Experience.module.css';
 
 type ExperienceItemProps = {
@@ -6,16 +7,6 @@ type ExperienceItemProps = {
   skills?: string[];
   date: string;
 };
-
-function SkillList({ items }: { items: string[] }) {
-  return (
-    <ul className={styles.list}>
-      {items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-  );
-}
 
 export function ExperienceItem({
   title,
