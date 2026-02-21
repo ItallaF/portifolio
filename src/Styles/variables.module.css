@@ -1,0 +1,24 @@
+:root {
+  /* Brand */
+  --primary: #a64ca6;
+  --secondary: #b37fb3;
+  --dark: #1e1e1e;
+  --light: #f5fffa;
+
+  /* Sections */
+  --section-banner: #b37fb3;
+  --section-sobre: #b37fb3;
+  --section-experiencia: #a784a7;
+  --section-projetos: #b37fb3;
+  --section-certificacoes: #a784a7;
+
+  /* Layout */
+  --container-width: 1200px;
+
+  /* Spacing */
+  --space-sm: 1rem;
+  --space-md: 1rem;
+  --space-lg: 1rem;
+
+  --radius: 12px;
+}

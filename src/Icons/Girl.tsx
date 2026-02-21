@@ -14,6 +14,8 @@ const SvgGirl = ({
     xmlSpace="preserve"
     viewBox="0 0 5906 5906"
     aria-labelledby={titleId}
+    width="100%"
+    height="100%"
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}

@@ -14,6 +14,8 @@ const SvgGitHub = ({
     fill="none"
     viewBox="0 0 24 24"
     aria-labelledby={titleId}
+    width="20"
+    height="20"
     {...props}
   >
     {title ? <title id={titleId}>{title}</title> : null}

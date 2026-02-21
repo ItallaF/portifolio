@@ -16,6 +16,8 @@ const SvgLinkedin = ({
     viewBox="0 0 45.959 45.959"
     aria-labelledby={titleId}
     {...props}
+    width="20"
+    height="20"
   >
     {title ? <title id={titleId}>{title}</title> : null}
     <path

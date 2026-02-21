@@ -1,0 +1,22 @@
+@import './variables.css';
+@import './breakpoints.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

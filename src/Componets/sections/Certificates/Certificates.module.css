@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper :global(.swiper-wrapper) {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper :global(.swiper-slide) {
+  display: flex;
+  height: auto;
+}
+
+.swiper :global(.swiper-button-prev),
+.swiper :global(.swiper-button-next) {
+  color: #ffffff;
+}
+
+/* Opcional: evitar overflow lateral */
+:global(.swiper) {
+  overflow: hidden;
+}
