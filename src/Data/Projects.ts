@@ -4,6 +4,7 @@ import clothes from '../assets/img/projectos/Clothes.jpg'
 import talktome from '../assets/img/projectos/TalkToMe.jpg'
 import rotport from '../assets/img/projectos/Turism.jpg'
 import portifolio from '../assets/img/projectos/portifolio.jpg'
+import TecCelulares from '../assets/img/projectos/TecCelulares.jpg'
 
 interface Project {
   title: string
@@ -32,6 +33,15 @@ export const projects: Project[] = [
     image: talktome,
     demo: 'https://talk-to-me-beta.vercel.app/',
     code: 'https://github.com/ItallaF/Talk-to-me/tree/master/frontend',
+  },
+  {
+    title: 'TecCelulares',
+    description:
+      'Aplicação desenvolvida em React simulando um e-commerce focado em celulares',
+    tech: 'React Js, TypeScript, Css, localStorage',
+    image: TecCelulares,
+    demo: 'https://tec-celulares.vercel.app/',
+    code: 'https://github.com/ItallaF/TecCelulares',
   },
   {
     title: 'RotPort',
